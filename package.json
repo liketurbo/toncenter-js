@@ -1,16 +1,24 @@
 {
   "name": "toncenter",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/my-library.cjs.js",
+  "module": "dist/my-library.esm.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "rollup -c --bundleConfigAsCjs"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
     "@types/lodash": "^4.17.5",
+    "rollup": "^4.18.0",
+    "tslib": "^2.6.3",
     "typescript": "^5.4.5"
   },
   "dependencies": {
