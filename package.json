@@ -7,10 +7,17 @@
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "blockchain",
+    "ton",
+    "toncenter"
+  ],
+  "author": {
+    "email": "liketurbo.work@gmail.com",
+    "name": "Rami Chasygov"
+  },
   "license": "MIT",
-  "description": "",
+  "description": "SDK for integrating Toncenter into JavaScript applications.",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-json": "^6.1.0",
@@ -24,5 +31,9 @@
   "dependencies": {
     "axios": "^1.7.2",
     "lodash": "^4.17.21"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liketurbo/toncenter-js"
   }
 }
